@@ -36,9 +36,4 @@ TODO:
 -for the queues make a method to return just a channel.
 -Make sense of the data returned !
 
-
-Questions can cancelations:
--is it possible to make DMA calls (getting physical with USB Type-C) ?
-
-
    </pre>
