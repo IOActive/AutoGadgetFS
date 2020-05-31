@@ -1,4 +1,3 @@
-
 # AutogadgetFS
 # USB testing made easy
 ## Installation
@@ -45,6 +44,21 @@
     Enter IP address of the rabbitmq server: 127.0.0.1
     Give your project a name?!: 
    ```
+* Patch Pyusb langID:
+    * Edit the file */usr/local/lib/python3.7/dist-packages/usb/util.py*
+        * make changes to the *def get_string* method to look like below:
+        ```
+        if 0 == len(langids):
+            return "Error Reading langID"
+            #raise ValueError("The device has no langid")
+        if langid is None:
+            langid = langids[0]
+        elif langid not in langids:
+            return "Error Reading langID"
+            #raise ValueError("The device does not support the specified langid")
+        ```
+    * If you prefer to use *patch* or diff apply the following patch to the file:
+        * AutoGadgetFS/pyusb_patches/pyusb_langid.patch
 
 #### PI zero
 * Obtain a copy of [Raspian](https://www.raspberrypi.org/downloads/raspbian/)
@@ -101,9 +115,3 @@
     $ sudo -H pip3 install -r requirements.txt
     ```
 # And you're done!
-
-
-<pre>
-<h1>Supported by</h1>
-<img src="https://github.com/ehabhussein/AutoGadgetFS/blob/master/JetBrains.png">
-</pre>
