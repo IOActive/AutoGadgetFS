@@ -1,15 +1,19 @@
 
 ## Table of Contents
 
-[Requirments](#Requirments)
+1. [Requirments](#Requirments)
 
-[Installation](#Installation)
+2. [Installation](#Installation)
 
-[Youtube Playlist](#Youtube)
+    1. [Linux](#Linux)
 
-[Slack](#Slack)
+    2. [Raspberry Pi Zero with WIFI](#Rasp)
 
-[Supported by](#Support)
+3. [Youtube Playlist](#Youtube)
+
+4. [Slack](#Slack)
+
+5. [Supported by](#Support)
 
 ---
 
@@ -17,9 +21,9 @@
 
 ### Requirments:
 
-💻 Host machine running Linux (Debian/Ubuntu/Kali)
+1. 💻 Host machine running Linux (Debian/Ubuntu/Kali)
 
-🥧 Raspberry Pi Zero with WIFI support
+2. 🥧 Raspberry Pi Zero with WIFI support
 
 ---
 
@@ -27,7 +31,9 @@
 
 ### Installation
 
-### Linux Machine
+<a name="Linux"/>
+
+#### Linux Machine
 
 * Install Python3.7, ipython3 ,git, pip and rabbitMQ server
 
@@ -112,7 +118,9 @@
 
 ---
 
-### Raspberry Pi Zero W
+<a name="Rasp"/>
+
+#### Raspberry Pi Zero W
 
 * Obtain a copy of [Raspian Lite Edition](https://downloads.raspberrypi.org/raspios_lite_armhf_latest)
   * Burn the Image to the SD card using [BalenaEtcher](https://www.balena.io/etcher/)
