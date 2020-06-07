@@ -1,5 +1,4 @@
 
-[![Paypal Donations](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/autogadgetfs)
 
 ## Table of Contents
 
@@ -12,8 +11,6 @@
 [Slack](#Slack)
 
 [Supported by](#Support)
-
-[Buy me a coffee ☕️](#Donate)
 
 ---
 
@@ -210,8 +207,3 @@ Visit [AutogadgetFS Slack Channel](https://join.slack.com/t/autogadgetfs/shared_
 
 ![JetBrains](https://github.com/ehabhussein/AutoGadgetFS/raw/master/JetBrains.png)
 
----
-
-<a name="Donate"/>
-
-[![Paypal Donations](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/autogadgetfs)
