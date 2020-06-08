@@ -1,19 +1,36 @@
 
+<div style="text-align:center"><img src="https://github.com/ehabhussein/AutoGadgetFS/raw/master/agfslogo.png" /></div>
+
 ## Table of Contents
 
-1. [Requirments](#Requirments)
+1. [What's AutoGadgetFS ?](#About)
 
-2. [Installation](#Installation)
+2. [Requirments](#Requirments)
+
+3. [Installation](#Installation)
 
     1. [Linux](#Linux)
 
     2. [Raspberry Pi Zero with WIFI](#Rasp)
 
-3. [Youtube Playlist](#Youtube)
+4. [Screen Shots](#Screens)
 
-4. [Slack](#Slack)
+5. [Youtube Playlist](#Youtube)
 
-5. [Supported by](#Support)
+6. [Slack](#Slack)
+
+7. [Supported by](#Support)
+
+
+---
+
+<a name="About"/>
+
+### What’s AutoGadgetFS ?
+
+AutoGadgetFS is an open source framework that allows users to assess USB devices and their associated hosts/drivers/software without an in-depth knowledge of the USB protocol. The tool is written in Python3 and utilizes RabbitMQ and WiFi access to enable researchers to conduct remote USB security assessments from anywhere around the globe. By leveraging ConfigFS, AutoGadgetFS allows users to clone and emulate devices quickly, eliminating the need to dig deep into the details of each implementation. The framework also allows users to create their own fuzzers on top of it. The total cost is around $10, the cost of a Raspberry Pi Zero with WiFi enabled.
+
+<div style="text-align:center"><img src="https://github.com/ehabhussein/AutoGadgetFS/raw/master/arch.png" /></div>
 
 ---
 
@@ -33,7 +50,7 @@
 
 <a name="Linux"/>
 
-#### Linux Machine
+### Linux Machine
 
 * Install Python3.7, ipython3 ,git, pip and rabbitMQ server
 
@@ -120,7 +137,7 @@
 
 <a name="Rasp"/>
 
-#### Raspberry Pi Zero W
+### Raspberry Pi Zero W
 
 * Obtain a copy of [Raspian Lite Edition](https://downloads.raspberrypi.org/raspios_lite_armhf_latest)
   * Burn the Image to the SD card using [BalenaEtcher](https://www.balena.io/etcher/)
@@ -194,7 +211,31 @@
 
 ---
 
+<a name="Screens"/>
+
+### Screenshots:
+
+##### Man in the Middle:
+
+<div style="text-align:center"><img src="https://github.com/ehabhussein/AutoGadgetFS/raw/master/screenshots/mitm.png" /></div>
+
+#### USB device fuzzing: 
+
+<div style="text-align:center"><img src="https://github.com/ehabhussein/AutoGadgetFS/raw/master/screenshots/devfuzzer.png" /></div>
+
+#### Host side fuzzing with code covereage:
+
+<div style="text-align:center"><img src="https://github.com/ehabhussein/AutoGadgetFS/raw/master/screenshots/codecov.png" /></div>
+
+#### Fuzzer based on a selection of bytes:
+
+<div style="text-align:center"><img src="https://github.com/ehabhussein/AutoGadgetFS/raw/master/screenshots/selectivefuzz.png" /></div>
+
+---
+
 <a name="Youtube"/>
+
+### Youtube Playlist:
 
 [Youtube Playlist](https://www.youtube.com/playlist?list=PLKozlVgM6RQjNHmpWR2RBiFCtufV03o6Z)
 
@@ -202,15 +243,16 @@
 
 <a name="Slack"/>
 
+### Join Slack:
+
 Visit [AutogadgetFS Slack Channel](https://join.slack.com/t/autogadgetfs/shared_invite/zt-emgcv3ol-unG_axHmSQlk~5GcBddhlQ)
 
 ---
 
 <a name="Support"/>
 
-#### Supported by
+### Supported by:
 
 ![IOActive](https://ioactive.com/wp-content/themes/ioactive-redesign/images/logo.png)
 
 ![JetBrains](https://github.com/ehabhussein/AutoGadgetFS/raw/master/JetBrains.png)
-
