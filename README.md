@@ -1,6 +1,5 @@
 
-<div style="text-align:center"><img src="https://github.com/ehabhussein/AutoGadgetFS/raw/master/agfslogo.png" /></div>
-
+<div style="text-align:left"><img src="https://github.com/ehabhussein/AutoGadgetFS/raw/master/screenshots/agfslogof.jpeg" /></div>
 
 ## Table of Contents
 
@@ -36,7 +35,7 @@ AutoGadgetFS is an open source framework that allows users to assess USB devices
 
 Scenario 1 setup: 
 
-<div style="text-align:center"><img src="https://github.com/ehabhussein/AutoGadgetFS/raw/master/screenshots/scenario1.jpeg" /></div>
+<div style="text-align:center"><img src="https://github.com/ehabhussein/AutoGadgetFS/raw/master/screenshots/scenario1.jpeg"  width="550" height="187" /></div>
 
 Scenario 2 setup (Ideal):
 
