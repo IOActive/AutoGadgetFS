@@ -1,6 +1,7 @@
 
 <div style="text-align:center"><img src="https://github.com/ehabhussein/AutoGadgetFS/raw/master/agfslogo.png" /></div>
 
+
 ## Table of Contents
 
 1. [What's AutoGadgetFS ?](#About)
@@ -23,6 +24,7 @@
 
 8. [Supported by](#Support)
 
+9. [Contact me](#Contact)
 
 ---
 
@@ -32,7 +34,13 @@
 
 AutoGadgetFS is an open source framework that allows users to assess USB devices and their associated hosts/drivers/software without an in-depth knowledge of the USB protocol. The tool is written in Python3 and utilizes RabbitMQ and WiFi access to enable researchers to conduct remote USB security assessments from anywhere around the globe. By leveraging ConfigFS, AutoGadgetFS allows users to clone and emulate devices quickly, eliminating the need to dig deep into the details of each implementation. The framework also allows users to create their own fuzzers on top of it. The total cost is around $10, the cost of a Raspberry Pi Zero with WiFi enabled.
 
-<div style="text-align:center"><img src="https://github.com/ehabhussein/AutoGadgetFS/raw/master/arch.png" /></div>
+Scenario 1 setup: 
+
+<div style="text-align:center"><img src="https://github.com/ehabhussein/AutoGadgetFS/raw/master/screenshots/scenario1.jpeg" /></div>
+
+Scenario 2 setup (Ideal):
+
+<div style="text-align:center"><img src="https://github.com/ehabhussein/AutoGadgetFS/raw/master/screenshots/scenario2.jpeg" /></div>
 
 ---
 
@@ -428,7 +436,14 @@ Visit [AutogadgetFS Slack Channel](https://join.slack.com/t/autogadgetfs/shared_
 
 ### Supported by:
 
-![IOActive](https://ioactive.com/wp-content/themes/ioactive-redesign/images/logo.png)
+<img src="https://scontent.faly3-2.fna.fbcdn.net/v/t1.0-9/fr/cp0/e15/q65/44079817_10157132509822841_8000883082938810368_n.jpg?_nc_cat=111&_nc_sid=dd9801&efg=eyJpIjoidCJ9&_nc_oc=AQmV77vp4H7E5CLwRCvKIPBIb9mRcD6LUSD48vYLH-cjd5wwxVvv5p-S8CwHBBYQr9I&_nc_ht=scontent.faly3-2.fna&_nc_tp=14&oh=d1653eaad921c8faf36beecbf242dcf8&oe=5F02FEF9" width="150" height="150"> ![JetBrains](https://github.com/ehabhussein/AutoGadgetFS/raw/master/JetBrains.png)
 
-![JetBrains](https://github.com/ehabhussein/AutoGadgetFS/raw/master/JetBrains.png)
+---
 
+<a name="Contact"/>
+
+### Contact me:
+
+### 📧: <rd@agfs.io>
+
+### 🐦 : <https://twitter.com/0xRaindrop>
