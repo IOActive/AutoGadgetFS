@@ -11,9 +11,9 @@
 
     a. [Device testing only](#Dot)
     
-    b. [Minimal Man in the middle setup](#MMITM)
+    b. [Minimal agfs in the middle setup](#MMITM)
     
-    c. [Complete man in the middle setup with debugging support](#FMITM)
+    c. [Complete agfs in the middle setup with debugging support](#FMITM)
     
     d. [How AutoGadgetFS works](#HIW)
 
@@ -77,7 +77,7 @@ Device testing only:
 <a name="MMITM"/>
 
 ```bash
-Minimal Man in the middle setup:
+Minimal agfs in the middle setup:
 ``` 
 
 <div style="text-align:center"><img src="https://github.com/ehabhussein/AutoGadgetFS/raw/master/screenshots/scenario1.jpeg" width="550" height="187" /></div>
@@ -85,7 +85,7 @@ Minimal Man in the middle setup:
 <a name="FMITM"/>
 
 ```bash
-Complete man in the middle setup with debugging support:
+Complete agfs in the middle setup with debugging support:
 ```
 
 <div style="text-align:center"><img src="https://github.com/ehabhussein/AutoGadgetFS/raw/master/screenshots/scenario2.jpeg"/></div>
