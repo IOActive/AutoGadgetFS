@@ -7,23 +7,35 @@
 
 2. [Requirments](#Requirments)
 
-3. [Installation](#Installation)
+3. [The Setup](#Scenarios)
+
+    a. [Device only testing](#Dot)
+    
+    b. [Minimal Man in the middle setup](#MMITM)
+    
+    c. [Complete man in the middle setup with debugging support](#FMITM)
+    
+    d. [How AutoGadgetFS works](#HIW)
+
+4. [USB Device class support](#Usbdev)
+
+5. [Installation](#Installation)
 
     a. [Linux](#Linux)
 
     b. [Raspberry Pi Zero with WIFI](#Rasp)
+    
+6. [Jupyter notebook tutorial](#Tutorial)
 
-4. [Jupyter notebook tutorial](#Tutorial)
+7. [ScreenShots](#Screens)
 
-5. [ScreenShots](#Screens)
+8. [Youtube Playlist](#Youtube)
 
-6. [Youtube Playlist](#Youtube)
+9. [Slack](#Slack)
 
-7. [Slack](#Slack)
+10. [Supported by](#Support)
 
-8. [Supported by](#Support)
-
-9. [Contact me](#Contact)
+11. [Contact me](#Contact)
 
 ---
 
@@ -31,15 +43,7 @@
 
 ### What’s AutoGadgetFS ?
 
-AutoGadgetFS is an open source framework that allows users to assess USB devices and their associated hosts/drivers/software without an in-depth knowledge of the USB protocol. The tool is written in Python3 and utilizes RabbitMQ and WiFi access to enable researchers to conduct remote USB security assessments from anywhere around the globe. By leveraging ConfigFS, AutoGadgetFS allows users to clone and emulate devices quickly, eliminating the need to dig deep into the details of each implementation. The framework also allows users to create their own fuzzers on top of it. The total cost is around $10, the cost of a Raspberry Pi Zero with WiFi enabled.
-
-Scenario 1 setup: 
-
-<div style="text-align:center"><img src="https://github.com/ehabhussein/AutoGadgetFS/raw/master/screenshots/scenario1.jpeg"  width="550" height="187" /></div>
-
-Scenario 2 setup (Ideal):
-
-<div style="text-align:center"><img src="https://github.com/ehabhussein/AutoGadgetFS/raw/master/screenshots/scenario2.jpeg" /></div>
+AutoGadgetFS is an open source framework that allows users to assess USB devices and their associated hosts/drivers/software without an in-depth knowledge of the USB protocol. The tool is written in Python3 and utilizes RabbitMQ and WiFi access to enable researchers to conduct remote USB security assessments from anywhere around the globe. By leveraging ConfigFS, AutoGadgetFS allows users to clone and emulate devices quickly, eliminating the need to dig deep into the details of each implementation. The framework also allows users to create their own fuzzers on top of it.
 
 ---
 
@@ -47,9 +51,62 @@ Scenario 2 setup (Ideal):
 
 ### Requirments:
 
-1. 💻 Host machine running Linux (Debian/Ubuntu/Kali)
+* 💻 Host machine running Linux (Debian/Ubuntu/Kali)
+* 🥧 Raspberry Pi Zero with WIFI support
+* 🎯 Target machine options:
+    * Virtual Machine
+    * Standalone machine
+* 🔌 2 x USB micro cables
+* 🔱 Target USB device
+* 🐞 Hardware debugger ( Optional )
 
-2. 🥧 Raspberry Pi Zero with WIFI support
+---
+
+<a name="Scenarios"/>
+
+### The Setup:
+
+<a name="Dot"/>
+
+```bash
+Device only testing:
+``` 
+
+<div style="text-align:center"><img src="https://github.com/ehabhussein/AutoGadgetFS/raw/master/screenshots/devtest.jpeg" width="350" height="187" /></div>
+
+<a name="MMITM"/>
+
+```bash
+Minimal Man in the middle setup:
+``` 
+
+<div style="text-align:center"><img src="https://github.com/ehabhussein/AutoGadgetFS/raw/master/screenshots/scenario1.jpeg" width="550" height="187" /></div>
+
+<a name="FMITM"/>
+
+```bash
+Complete man in the middle setup with debugging support:
+```
+
+<div style="text-align:center"><img src="https://github.com/ehabhussein/AutoGadgetFS/raw/master/screenshots/scenario2.jpeg"/></div>
+
+<a name="HIW"/>
+
+```bash
+How AutoGadgetFS works:
+``` 
+
+---
+
+<a name="Usbdev"/>
+
+### USB Device class support:
+
+[✔️] USB HID Devices fully supported (Man in the middle)
+
+[⚠️] Device only testing .. All USB devices (NO Man in the middle)
+
+[⏳] Future releases... All USB devices (Man in the middle)
 
 ---
 
@@ -225,7 +282,6 @@ Scenario 2 setup (Ideal):
 ### Jupyter notebook tutorial:
 
 In the works!
-
 
 ---
 
