@@ -499,6 +499,6 @@ Visit [AutogadgetFS Slack Channel](https://join.slack.com/t/autogadgetfs/shared_
 
 ### Contact me:
 
-### 📧: <rd@agfs.io>
+### 📧: <rd⚛️agfs.io>
 
 ### 🐦 : <https://twitter.com/0xRaindrop>
