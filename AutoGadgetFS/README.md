@@ -19,23 +19,29 @@
 
 4. [USB Device class support](#Usbdev)
 
-5. [Installation](#Installation)
+5. [Capabilities](#Caps)
+
+6. [RoadMap](#Road)
+
+7. [Repository Activity](#Active)
+
+8. [Installation](#Installation)
 
     a. [Linux](#Linux)
 
     b. [Raspberry Pi Zero with WIFI](#Rasp)
     
-6. [Jupyter notebook tutorial](#Tutorial)
+9. [Jupyter notebook tutorial](#Tutorial)
 
-7. [ScreenShots](#Screens)
+10. [ScreenShots](#Screens)
 
-8. [Youtube Playlist](#Youtube)
+11. [Youtube Playlist](#Youtube)
 
-9. [Slack](#Slack)
+12. [Slack](#Slack)
 
-10. [Supported by](#Support)
+13. [Supported by](#Support)
 
-11. [Contact me](#Contact)
+14. [Contact me](#Contact)
 
 ---
 
@@ -107,6 +113,26 @@ How AutoGadgetFS works:
 [⚠️] Device only testing .. All USB devices (NO Man in the middle)
 
 [⏳] Future releases... All USB devices (Man in the middle)
+
+---
+
+<a name="Caps"/>
+
+### Capabilities:
+
+---
+
+<a name="Road"/>
+
+### RoadMap:
+
+---
+
+<a name="Active"/>
+
+### Repository Activity
+
+<div style="text-align:center"><img src="https://grass-graph.moshimo.works/images/ehabhussein.png"/></div>
 
 ---
 
@@ -491,10 +517,9 @@ Visit [AutogadgetFS Slack Channel](https://join.slack.com/t/autogadgetfs/shared_
 
 ### Supported by:
 
-<img src="https://scontent.faly3-2.fna.fbcdn.net/v/t1.0-9/fr/cp0/e15/q65/44079817_10157132509822841_8000883082938810368_n.jpg?_nc_cat=111&_nc_sid=dd9801&efg=eyJpIjoidCJ9&_nc_oc=AQmV77vp4H7E5CLwRCvKIPBIb9mRcD6LUSD48vYLH-cjd5wwxVvv5p-S8CwHBBYQr9I&_nc_ht=scontent.faly3-2.fna&_nc_tp=14&oh=d1653eaad921c8faf36beecbf242dcf8&oe=5F02FEF9" width="150" height="150"> ![JetBrains](https://github.com/ehabhussein/AutoGadgetFS/raw/master/JetBrains.png)
+<img src="https://scontent.faly3-2.fna.fbcdn.net/v/t1.0-9/fr/cp0/e15/q65/44079817_10157132509822841_8000883082938810368_n.jpg?_nc_cat=111&_nc_sid=dd9801&efg=eyJpIjoidCJ9&_nc_oc=AQmV77vp4H7E5CLwRCvKIPBIb9mRcD6LUSD48vYLH-cjd5wwxVvv5p-S8CwHBBYQr9I&_nc_ht=scontent.faly3-2.fna&_nc_tp=14&oh=d1653eaad921c8faf36beecbf242dcf8&oe=5F02FEF9" width="166" height="166"> ![JetBrains](https://github.com/ehabhussein/AutoGadgetFS/raw/master/screenshots/JetBrains.png) ![PyUSB](https://github.com/ehabhussein/AutoGadgetFS/raw/master/screenshots/pyusb.png)
 
 ---
-
 <a name="Contact"/>
 
 ### Contact me:
