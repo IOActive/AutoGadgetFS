@@ -1,5 +1,4 @@
-
-<div style="text-align:left"><img src="https://github.com/ehabhussein/AutoGadgetFS/raw/master/screenshots/agfslogof.jpeg" /></div>
+<div style="text-align:center"><img src="https://github.com/ehabhussein/AutoGadgetFS/raw/master/screenshots/agfslogos.png"/></div>
 
 ## Table of Contents
 
@@ -23,25 +22,23 @@
 
 6. [RoadMap](#Road)
 
-7. [Repository Activity](#Active)
-
-8. [Installation](#Installation)
+7. [Installation](#Installation)
 
     a. [Linux](#Linux)
 
     b. [Raspberry Pi Zero with WIFI](#Rasp)
     
-9. [Jupyter notebook tutorial](#Tutorial)
+8. [AutogadgetFS tutorial](#Tutorial)
 
-10. [ScreenShots](#Screens)
+9. [ScreenShots](#Screens)
 
-11. [Youtube Playlist](#Youtube)
+10. [Youtube Playlist](#Youtube)
 
-12. [Slack](#Slack)
+11. [Slack](#Slack)
 
-13. [Supported by](#Support)
+12. [Supported by](#Support)
 
-14. [Contact me](#Contact)
+13. [Contact me](#Contact)
 
 ---
 
@@ -122,20 +119,6 @@ How AutoGadgetFS works:
 
 ---
 
-<a name="Road"/>
-
-### RoadMap:
-
----
-
-<a name="Active"/>
-
-### Repository Activity
-
-<div style="text-align:center"><img src="https://grass-graph.moshimo.works/images/ehabhussein.png"/></div>
-
----
-
 <a name="Installation"/>
 
 ### Installation
@@ -147,7 +130,7 @@ How AutoGadgetFS works:
 * Install Python3.7, ipython3 ,git, pip and rabbitMQ server
 
     ```bash
-    $ sudo apt install python3.7 ipython3 git python3-pip rabbitmq-server
+    $ sudo apt install python3.7 ipython3 git python3-pip rabbitmq-server dfu-util
     $ sudo service rabbitmq-server start
     ```
 
@@ -305,9 +288,9 @@ How AutoGadgetFS works:
 
 <a name="Tutorial"/>
 
-### Jupyter notebook tutorial:
+### AutoGadgetFS tutorial:
 
-In the works!
+[Click to visit the tutorial](https://docs.agfs.io/)
 
 ---
 
@@ -517,9 +500,10 @@ Visit [AutogadgetFS Slack Channel](https://join.slack.com/t/autogadgetfs/shared_
 
 ### Supported by:
 
-<img src="https://scontent.faly3-2.fna.fbcdn.net/v/t1.0-9/fr/cp0/e15/q65/44079817_10157132509822841_8000883082938810368_n.jpg?_nc_cat=111&_nc_sid=dd9801&efg=eyJpIjoidCJ9&_nc_oc=AQmV77vp4H7E5CLwRCvKIPBIb9mRcD6LUSD48vYLH-cjd5wwxVvv5p-S8CwHBBYQr9I&_nc_ht=scontent.faly3-2.fna&_nc_tp=14&oh=d1653eaad921c8faf36beecbf242dcf8&oe=5F02FEF9" width="166" height="166"> ![JetBrains](https://github.com/ehabhussein/AutoGadgetFS/raw/master/screenshots/JetBrains.png) ![PyUSB](https://github.com/ehabhussein/AutoGadgetFS/raw/master/screenshots/pyusb.png)
+<img src="https://scontent.faly3-2.fna.fbcdn.net/v/t1.0-9/fr/cp0/e15/q65/44079817_10157132509822841_8000883082938810368_n.jpg?_nc_cat=111&_nc_sid=dd9801&efg=eyJpIjoidCJ9&_nc_oc=AQmV77vp4H7E5CLwRCvKIPBIb9mRcD6LUSD48vYLH-cjd5wwxVvv5p-S8CwHBBYQr9I&_nc_ht=scontent.faly3-2.fna&_nc_tp=14&oh=d1653eaad921c8faf36beecbf242dcf8&oe=5F02FEF9" width="166" height="166"> <img src="https://github.com/ehabhussein/AutoGadgetFS/raw/master/screenshots/JetBrains.png" width="166" height="166">  <img src="https://github.com/ehabhussein/AutoGadgetFS/raw/master/screenshots/pyusb.png" width="166" height="166"> <img src="https://i.imgur.com/r6XELEf.png" width="166" height="166">
 
 ---
+
 <a name="Contact"/>
 
 ### Contact me:
