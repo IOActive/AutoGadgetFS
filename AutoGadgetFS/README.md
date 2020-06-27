@@ -1,3 +1,4 @@
+
 <div style="text-align:center"><img src="https://github.com/ehabhussein/AutoGadgetFS/raw/master/screenshots/agfslogos.png"/></div>
 
 ## Table of Contents
@@ -38,7 +39,9 @@
 
 12. [Supported by](#Support)
 
-13. [Contact me](#Contact)
+13. [Buy me a coffee ☕️](#Donate)
+
+14. [Contact me](#Contact)
 
 ---
 
@@ -75,7 +78,7 @@ AutoGadgetFS is an open source framework that allows users to assess USB devices
 Device testing only:
 ``` 
 
-<div style="text-align:center"><img src="https://github.com/ehabhussein/AutoGadgetFS/raw/master/screenshots/devtest.jpeg" width="350" height="187" /></div>
+<div style="text-align:center"><img src="https://github.com/ehabhussein/AutoGadgetFS/raw/master/screenshots/devtest.jpeg" width="450" height="187" /></div>
 
 <a name="MMITM"/>
 
@@ -504,6 +507,13 @@ Visit [AutogadgetFS Slack Channel](https://join.slack.com/t/autogadgetfs/shared_
 
 ---
 
+<a name="Donate"/>
+
+### Buy me a coffee to support the development of this project
+
+[![PayPal Donations](https://img.shields.io/static/v1?logo=PayPal&label=PayPal&message=https://www.paypal.me/autogadgetfs&color=green)](https://www.paypal.me/autogadgetfs)
+
+---
 <a name="Contact"/>
 
 ### Contact me:
