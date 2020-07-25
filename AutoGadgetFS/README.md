@@ -1,5 +1,6 @@
-
 <div style="text-align:center"><img src="https://github.com/ehabhussein/AutoGadgetFS/raw/master/screenshots/agfslogos.png"/></div>
+
+[![PayPal Donations](https://img.shields.io/static/v1?logo=Donate&label=Donate&message=To%20support%20the%20development%20of%20AGFS&color=blue)](https://www.paypal.me/autogadgetfs)
 
 ## Table of Contents
 
@@ -128,56 +129,69 @@ How AutoGadgetFS works:
 
 <a name="Linux"/>
 
-### Linux Machine
+### Linux Machine 
 
-* Install Python3.7, ipython3 ,git, pip and rabbitMQ server
+* Note: WSL/WSL2 is not supported due to issues with USB pass-through.
+
+* Install Python3, ipython3 ,git, pip and rabbitMQ server
 
     ```bash
-    $ sudo apt install python3.7 ipython3 git python3-pip rabbitmq-server dfu-util
-    $ sudo service rabbitmq-server start
+    sudo apt install python3 ipython3 git python3-pip rabbitmq-server dfu-util
+    sudo service rabbitmq-server start
     ```
 
 * Clone the repository
 
     ```bash
-    $ git clone https://github.com/ehabhussein/AutoGadgetFS
-    $ cd AutoGadgetFS
+    git clone https://github.com/ehabhussein/AutoGadgetFS
+    cd AutoGadgetFS
     ```
 
 * Install the requirements
 
     ```bash
-    $ sudo -H pip3 install -r requirements.txt
-    $ sudo -H pip3 install cmd
+    sudo -H pip3 install -r requirements.txt
+    ```
+
+* Downgrade prompt toolkit for better ipython experience:
+
+    ```bash
+    sudo python3 -m pip install prompt-toolkit~=2.0
     ```
 
 * Enable the web interface for rabbitMQ
 
     ```bash
-    $ sudo rabbitmq-plugins enable rabbitmq_management
+    sudo rabbitmq-plugins enable rabbitmq_management
     http://localhost:15672/ to reach the web interface
     ```
 
 * login to the web interface with the credentials *guest:guest*
+  * NOTE: if you are not installing rabbitMQ on `localhost` add the following user and login with it:
+    ```bash
+    sudo rabbitmqctl add_user autogfs usb4ever
+    sudo rabbitmqctl set_user_tags autogfs administrator
+    ```
   * Upload the rabbitMQ configuration file
     * In the overview tab scroll to the bottom to import definitions
     * Upload the file found in: *rabbitMQbrokerconfig/rabbitmq-Config.json*
 
     ```bash
-    $ sudo service rabbitmq-server restart
+    sudo service rabbitmq-server restart
     ```
 
 * Test the installation
 
     ```python
-    $ sudo ipython3
+    sudo ipython3
+    
     Python 3.7.7 (default, Apr  1 2020, 13:48:52)
     Type 'copyright', 'credits' or 'license' for more information
     IPython 7.9.0 -- An enhanced Interactive Python. Type '?' for help.
 
     In [1]: import libagfs
 
-    In [2]: x = libagfs.agfs
+    In [2]: x = libagfs.agfs()
 
     ***************************************
     AutoGadgetFS: USB testing made easy
@@ -186,7 +200,8 @@ How AutoGadgetFS works:
   
     In [3]: exit
 
-    $ sudo python3.7 agfsconsole.py
+    sudo `python3` agfsconsole.py
+    
     ***************************************
     AutoGadgetFS: USB testing made easy
     ***************************************
@@ -195,7 +210,7 @@ How AutoGadgetFS works:
    ```
 
 * Patch Pyusb langID:
-  * Edit the file `/usr/local/lib/python3.7/dist-packages/usb/util.py`
+  * Edit the file `/usr/local/lib/python3/dist-packages/usb/util.py`
     * make changes to the `def get_string` method to look like below:
 
         ```python
@@ -244,14 +259,14 @@ How AutoGadgetFS works:
   * in the `/path/to/sdcard/boot` directory create an empty file name ssh:
 
     ```bash
-    $ sudo touch /path/to/sdcard/boot/ssh
+    sudo touch /path/to/sdcard/boot/ssh
     ```
 
 * Enable Wifi:
   * in the `/path/to/sdcard/boot` directory create an file named `wpa_supplicant.conf`:
 
     ```bash
-    $ sudo vim /path/to/sdcard/boot/wpa_supplicant.conf
+    sudo vim /path/to/sdcard/boot/wpa_supplicant.conf
     ```
 
   * Add the following contents:
@@ -271,19 +286,53 @@ How AutoGadgetFS works:
 * Copy the content of `AutogadgetFS/Pizero/` to the Pi zero: `username: pi` & `password: raspberry`
 
     ```bash
-    $ cd AutogadgetFS/Pizero/
-    $ scp gadgetfuzzer.py removegadget.sh requirements.txt router.py pi@<pi-ipaddress>:/home/pi
+    cd AutogadgetFS/Pizero/
+    scp gadgetfuzzer.py removegadget.sh requirements.txt router.py pi@<pi-ipaddress>:/home/pi
     ```
 
 * SSH into the PI Zero and setup requirements for AutoGadgetFS:
 
     ```bash
-    $ ssh pi@<pi-ip-address>
-    $ chmod +x removegadget.sh
-    $ sudo apt update
-    $ sudo apt install python3.7 python3-pip
-    $ sudo -H pip3 install -r requirements.txt
+    ssh pi@<pi-ip-address>
+    chmod +x removegadget.sh
+    sudo apt update
+    sudo apt install python3 python3-pip
+    sudo -H pip3 install -r requirements.txt
     ```
+* Upgrading the latest kernel and adding modules (* This step is optional for the current release):
+    ( This will take a very long time compiling on the Pi Zero, unless you choose to cross compile the kernel see [Compiling options](https://www.raspberrypi.org/documentation/linux/kernel/building.md))
+
+    ```bash
+    sudo bash
+    apt install git bc bison flex libssl-dev make libncurses5-dev screen
+    screen
+    mkdir Downloads
+    cd Downloads/
+    git clone --depth=1 https://github.com/raspberrypi/linux
+    cd linux/
+    make bcmrpi_defconfig
+    make menuconfig
+    ```
+
+    * Enable the Modules and save the config:
+
+    <div style="text-align:center"><img src="https://github.com/ehabhussein/AutoGadgetFS/raw/master/screenshots/allgadgets.png"/></div>
+    <div style="text-align:center"><img src="https://github.com/ehabhussein/AutoGadgetFS/raw/master/screenshots/allgadgets2.png"/></div>
+    <div style="text-align:center"><img src="https://github.com/ehabhussein/AutoGadgetFS/raw/master/screenshots/allgadgets3.png"/></div>
+    <div style="text-align:center"><img src="https://github.com/ehabhussein/AutoGadgetFS/raw/master/screenshots/allgadgets4.png"/></div>
+
+    * Build and use the kernel:
+
+    ```bash
+    make zImage modules dtbs
+    make modules_install
+    cp arch/arm/boot/dts/*.dtb /boot/
+    cp arch/arm/boot/dts/overlays/*.dtb* /boot/overlays/
+    cp arch/arm/boot/dts/overlays/README /boot/overlays/
+    cp arch/arm/boot/zImage /boot/kernel.img
+    reboot
+    ```
+
 
 #### And you're done!
 
@@ -511,7 +560,7 @@ Visit [AutogadgetFS Slack Channel](https://join.slack.com/t/autogadgetfs/shared_
 
 ### Buy me a coffee to support the development of this project
 
-[![PayPal Donations](https://img.shields.io/static/v1?logo=PayPal&label=PayPal&message=https://www.paypal.me/autogadgetfs&color=green)](https://www.paypal.me/autogadgetfs)
+[![PayPal Donations](https://img.shields.io/static/v1?logo=Donate&label=Donate&message=To%20support%20the%20development%20of%20AGFS&color=blue)](https://www.paypal.me/autogadgetfs)
 
 ---
 <a name="Contact"/>
