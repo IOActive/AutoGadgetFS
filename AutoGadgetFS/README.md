@@ -1,6 +1,5 @@
 <div style="text-align:center"><img src="https://github.com/ehabhussein/AutoGadgetFS/raw/master/screenshots/agfslogos.png"/></div>
 
-[![PayPal Donations](https://img.shields.io/static/v1?logo=Donate&label=Donate&message=To%20support%20the%20development%20of%20AGFS&color=blue)](https://www.paypal.me/autogadgetfs)
 
 ## Table of Contents
 
@@ -40,9 +39,7 @@
 
 12. [Supported by](#Support)
 
-13. [Buy me a coffee ☕️](#Donate)
-
-14. [Contact me](#Contact)
+13. [Contact me](#Contact)
 
 ---
 
@@ -553,14 +550,6 @@ Visit [AutogadgetFS Slack Channel](https://join.slack.com/t/autogadgetfs/shared_
 ### Supported by:
 
 <img src="https://pbs.twimg.com/profile_images/1039931315766870016/ahOvevDU_400x400.jpg" width="166" height="166"> <img src="https://github.com/ehabhussein/AutoGadgetFS/raw/master/screenshots/JetBrains.png" width="166" height="166">  <img src="https://github.com/ehabhussein/AutoGadgetFS/raw/master/screenshots/pyusb.png" width="166" height="166"> <img src="https://i.imgur.com/r6XELEf.png" width="166" height="166">
-
----
-
-<a name="Donate"/>
-
-### Buy me a coffee to support the development of this project
-
-[![PayPal Donations](https://img.shields.io/static/v1?logo=Donate&label=Donate&message=To%20support%20the%20development%20of%20AGFS&color=blue)](https://www.paypal.me/autogadgetfs)
 
 ---
 <a name="Contact"/>
